@@ -1,15 +1,13 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
-import {FaAward} from "react-icons/fa";
-import {FiUser} from "react-icons/fi";
-import {VscFolderLibrary} from "react-icons/vsc";
+import ME from '../../assets/profile-pic.jpg'
+import {Link} from "react-router-dom";
 
 const About = () => {
     return (
         <section id='about'>
             <h5>Get To Know</h5>
-            <h2>About Me</h2>
+            <h2><a href="" target="_blank">About Me</a></h2>
 
             <div className="container about_container">
                 <div className="about_me">
@@ -18,27 +16,23 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about_content">
-                    <div className="about_cards">
-                        <article className="about_card">
-                            <FaAward className="about_icon"/>
-                            <h5>Experience</h5>
-                            <small>3+ Years Working</small>
-                        </article>
-                        <article className="about_card">
-                            <FiUser className="about_icon"/>
-                            <h5>Clients</h5>
-                            <small>300+ Worldwide</small>
-                        </article>
-                        <article className="about_card">
-                            <VscFolderLibrary className="about_icon"/>
-                            <h5>Projects</h5>
-                            <small>80+ Completed Projects</small>
-                        </article>
-                    </div>
                     <p>
-                        ******** ABOUT ME PARAGRAPH **********
+                        Welcome to DomDevOps, my showcase as a Full Stack software engineer. My background is rich with
+                        experience in financial analysis, business management, and now, software engineering. After a
+                        rewarding decade working fiscal administration in the public sector, my knack for tackling
+                        complex problems inspired me to earn a second Bachelor's degree in Computer Science. Here,
+                        you’ll find projects that blend my technical skills with my strategic acumen as I navigate the
+                        evolving tech landscape.
+                        <br/><br/>
+                        Though new to the field of software development, my portfolio already showcases a variety of
+                        projects that highlight my proficiency in diverse programming languages and embrace DevOps
+                        principles. I'm committed to continual learning and eager to apply innovative solutions in
+                        software development. I look forward to collaborating within the tech community, embracing new
+                        challenges, and contributing to impactful software projects.
+                        <br/>
+                        <Link to="/blog">read more...</Link>
                     </p>
-                    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+
                 </div>
             </div>
         </section>

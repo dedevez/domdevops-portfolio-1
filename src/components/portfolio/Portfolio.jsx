@@ -3,9 +3,8 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import {Link} from 'react-router-dom';
+
 
 const data = [
     {
@@ -28,34 +27,13 @@ const data = [
         title: 'Learning Management System',
         github: 'https://github.com',
         demo: 'https://github.com'
-    },
-    {
-        id: 4,
-        image: IMG4,
-        title: 'Coming Soon!',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 5,
-        image: IMG5,
-        title: 'Coming Soon!',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 6,
-        image: IMG6,
-        title: 'Coming Soon!',
-        github: 'https://github.com',
-        demo: 'https://github.com'
     }
 ]
 const Portfolio = () => {
     return (
         <section id='portfolio'>
             <h5>My Recent Work</h5>
-            <h2>Portfolio</h2>
+            <h2><a href="" target="_blank">Portfolio</a></h2>
 
             <div className="container portfolio_container">
                 {
@@ -75,6 +53,7 @@ const Portfolio = () => {
                         )
                     })
                 }
+                <Link to="/portfolio">See More...</Link>
 
             </div>
         </section>

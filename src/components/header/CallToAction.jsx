@@ -4,8 +4,8 @@ import resume from '../../assets/cv.pdf'
 const CallToAction = () => {
     return (
         <div className='cta'>
-            <a href={resume} download className='btn'>Download Resume</a>
-            <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+            <a href="#portfolio" className='btn'>Explore Work</a>
+            <a href="#contact" className='btn btn-primary'>Contact Me</a>
         </div>
     )
 }

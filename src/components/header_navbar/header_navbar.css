@@ -1,0 +1,44 @@
+header_navbar {
+    background: var(--color-primary);
+    display: flex;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header_navbar a {
+    color: var(--color-bg);
+}
+
+.header_navbar-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    margin: 0;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.header_navbar-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 0;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */

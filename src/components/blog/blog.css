@@ -1,18 +1,18 @@
-.container.testimonials_container {
+.container.blog_container {
     width: 40%;
     padding-bottom: 4rem;
 }
 
-.client_avatar {
+.blog_image {
     width: 4rem;
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 1rem;
-    border: 0.4rem solid var(--color-primary-variant);
+    /*border: 0.4rem solid var(--color-primary-variant);*/
 }
 
-.testimonial {
+.blog_post {
     background: var(--color-bg-variant);
     text-align: center;
     padding: 2rem;
@@ -20,7 +20,7 @@
     user-select: none;
 }
 
-.client_review {
+.blog_summary {
     color: var(--color-light);
     font-weight: 300;
     display: block;
@@ -36,18 +36,18 @@
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1024px) {
-    .container.testimonials_container {
+    .container.blog_container {
         width: 60%;
     }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
-    .container.testimonials_container {
+    .container.blog_container {
         width: var(--container-width-sm);
     }
 
-    .client_review {
+    .blog_summary {
         width: var(--container-width-sm)
     }
 }
