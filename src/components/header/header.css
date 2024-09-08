@@ -1,6 +1,7 @@
 header {
-    height: 50vh;
+    height: 70vh;
     padding-top: 7rem;
+    padding-bottom: 7rem;
     overflow: hidden;
 }
 
@@ -50,14 +51,22 @@ header {
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1025px){
     header {
-        height: 55vh;
+        height: 60vh;
     }
+
+    .header_container h1{
+        font-family: "Sacramento", cursive;
+        font-weight: 400;
+        font-size: 3rem;
+        font-style: normal;
+    }
+
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px){
     header {
-        height: 60vh;
+        height: 70vh;
     }
 
     .cta, .header_socials, .scroll_down {
