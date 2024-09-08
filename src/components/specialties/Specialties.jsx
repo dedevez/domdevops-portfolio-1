@@ -6,7 +6,7 @@ const Specialties = () => {
     return (
         <section id='specialties'>
             <h5>What I Specialize In</h5>
-            <h2>Focus</h2>
+            <h2>Capabilities</h2>
             <div className="container specialties_container">
                 <article className="specialty">
                     <div className="specialty_head">

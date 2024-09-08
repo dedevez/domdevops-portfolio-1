@@ -20,40 +20,22 @@ const data = [
     {
         id: 1,
         image: IMG1,
-        title: 'Welcome to DomDevOps',
+        title: 'Who I Am: My Journey Into Software Development',
         summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
 
     },
-    // {
-    //     id: 2,
-    //     image: AVTR2,
-    //     title: 'Blog Post - Jack of All Trades',
-    //     summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
-    // },
-    // {
-    //     id: 3,
-    //     image: AVTR3,
-    //     title: 'Blog Post - Your First CI/CD Deployment',
-    //     summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
-    // },
-    // {
-    //     id: 5,
-    //     image: AVTR4,
-    //     title: 'Blog Post - Building an LMS',
-    //     summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
-    // },
-    // {
-    //     id: 6,
-    //     image: AVTR4,
-    //     title: 'Blog Post - Building... ',
-    //     summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
-    // },
-    // {
-    //     id: 7,
-    //     image: AVTR4,
-    //     title: 'Blog Post - Building...',
-    //     summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
-    // },
+    {
+        id: 2,
+        image: IMG1,
+        title: 'Personalizing DevOps: A Journey of Growth and Learning',
+        summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
+    },
+    {
+        id: 3,
+        image: IMG1,
+        title: 'Building My Developer Portfolio: Tools, Tech, and Lessons Learned',
+        summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque dolor doloribus dolorum eaque eum explicabo fuga fugit, in nemo nihil optio quae quia saepe sequi sit totam. Placeat.'
+    },
 ]
 const Blog = () => {
     return (

@@ -30,6 +30,10 @@
     margin-bottom: 0.5rem;
 }
 
+.contact_option h5 {
+    font-size: .95rem;
+}
+
 .contact_option a {
     margin-top: 0.7rem;
     display: inline-block;
@@ -51,6 +55,7 @@ input, textarea {
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
 }
 
 
