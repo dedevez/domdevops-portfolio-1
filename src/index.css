@@ -1,6 +1,4 @@
-
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 * {
     margin: 0;
@@ -16,66 +14,14 @@
 :root {
 
     /* ======== NEON THEME ======== */
-    --color-bg: #0a0a0a; /* Dark near-black background */
+    --color-bg: #00000a; /* Dark near-black background */
     --color-bg-variant: #181818; /* Dark gray background variant */
-    --color-primary:#00f5d4 ; /* Neon cyan for primary accents */
+    /*--color-primary:#00f5d4 ; !* Neon cyan for primary accents *!*/
+    --color-primary:#c22085 ; /* Neon pink for primary accents */
     --color-primary-variant: #39ff14; /* Transparent neon green */
-    --color-secondary: #b100f5; /* Neon purple for secondary accents */
+    --color-secondary: #c22085; /* Neon pink for secondary accents */
     --color-white: #f1f1f1; /* Very light gray for text */
     --color-light: #a1a1a1; /* Light gray for secondary text */
-
-    /* ======== BLUE THEME ======== */
-    /*--color-bg: #1f1f38;*/
-    /*--color-bg-variant: #2c2c6c;*/
-    /*--color-primary: #4bd5ff;*/
-    /*--color-primary-variant: rgba(77, 181, 255, 0.4);*/
-    /*--color-white: #fff;*/
-    /*--color-light: rgba(255, 255, 255, 0.6);*/
-
-    /* ======== HALLOWEEN THEME ======== */
-    /*--color-bg: #1a1a1a; !* Dark black with a slight tint *!*/
-    /*--color-bg-variant: #292929; !* Dark gray *!*/
-    /*--color-primary: #ff7518; !* Neon orange for primary accents *!*/
-    /*--color-primary-variant: rgba(255, 117, 24, 0.4); !* Transparent orange *!*/
-    /*--color-secondary: #b100f5; !* Neon purple *!*/
-    /*--color-white: #f0f0f0; !* Off-white *!*/
-    /*--color-light: #b100f5; !* Neon purple for secondary text *!*/
-
-    /* ======== CHRISTMAS THEME ======== */
-    /*--color-bg: #00251a; !* Dark pine green *!*/
-    /*--color-bg-variant: #3b1e1e; !* Dark maroon *!*/
-    /*--color-primary: #39ff14; !* Neon green *!*/
-    /*--color-primary-variant: rgba(57, 255, 20, 0.4); !* Transparent neon green *!*/
-    /*--color-secondary: #ff0033; !* Neon red *!*/
-    /*--color-white: #ffffff; !* Bright white for text *!*/
-    /*--color-light: #ff0033; !* Neon red for secondary text *!*/
-
-    /* ======== VALENTINE'S DAY THEME ======== */
-    /*--color-bg: #4b0000; !* Deep red *!*/
-    /*--color-bg-variant: #7d0a0a; !* Dark crimson *!*/
-    /*--color-primary: #ff69b4; !* Neon pink *!*/
-    /*--color-primary-variant: rgba(255, 105, 180, 0.4); !* Transparent pink *!*/
-    /*--color-secondary: #ff1493; !* Deep pink *!*/
-    /*--color-white: #ffe6f0; !* Very light pinkish-white *!*/
-    /*--color-light: #ff69b4; !* Neon pink for secondary text *!*/
-
-    /* ======== FOURTH OF JULY THEME ======== */
-    /*--color-bg: #001f3f; !* Deep navy blue *!*/
-    /*--color-bg-variant: #85144b; !* Rich burgundy *!*/
-    /*--color-primary: #0074d9; !* Neon blue *!*/
-    /*--color-primary-variant: rgba(0, 116, 217, 0.4); !* Transparent neon blue *!*/
-    /*--color-secondary: #ff4136; !* Neon red *!*/
-    /*--color-white: #ffffff; !* Bright white for text *!*/
-    /*--color-light: #ff4136; !* Neon red for secondary text *!*/
-
-    /* ======== NEW YEAR'S EVE THEME ======== */
-    /*--color-bg: #0a0a0a; !* Black *!*/
-    /*--color-bg-variant: #1c1c1c; !* Very dark gray *!*/
-    /*--color-primary: #ffd700; !* Neon gold *!*/
-    /*--color-primary-variant: rgba(255, 215, 0, 0.4); !* Transparent gold *!*/
-    /*--color-secondary: #c0c0c0; !* Silver *!*/
-    /*--color-white: #ffffff; !* Bright white for text *!*/
-    /*--color-light: #ffd700; !* Gold for secondary text *!*/
 
 
     --transition: all 200ms ease;

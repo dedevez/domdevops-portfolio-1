@@ -2,19 +2,20 @@ nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
+    padding: 0.7rem 0.7rem;
     z-index: 2;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 1rem;
     bottom: 2rem;
     display: flex;
-    gap: 0.8rem;
+    flex-direction: column;
+    gap: 0.6rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
 }
 
 nav a {
+    position: relative;
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
@@ -25,9 +26,56 @@ nav a {
 
 nav a:hover {
     background: rgba(0, 0, 0, 0.3);
+    color: var(--color-primary-variant);
 }
 
-nav a.active {
-    background: var(--color-primary);
-    color: var(--color-bg);
+nav a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    /*bottom: 120%;*/
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    font-size: 0.7rem;
+}
+
+nav a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1025px){
+
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px){
+    nav {
+        background: rgba(0, 0, 0, 0.3);
+        width: max-content;
+        display: block;
+        padding: 0.7rem 0.7rem;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0.05rem;
+        bottom: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 0.6rem;
+        border-radius: 3rem;
+        backdrop-filter: blur(15px);
+    }
 }

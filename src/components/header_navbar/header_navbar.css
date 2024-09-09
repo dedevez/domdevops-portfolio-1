@@ -1,5 +1,4 @@
 header_navbar {
-    background: var(--color-primary);
     display: flex;
     padding: 1rem 2rem;
     text-align: center;
@@ -9,27 +8,25 @@ header_navbar {
 }
 
 header_navbar a {
-    color: var(--color-bg);
+    color: var(--color-primary);
+}
+
+header_navbar a:hover {
+    color: var(--color-white);
 }
 
 .header_navbar-left {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 0.25rem;
     margin: 0;
     align-items: center;
-}
-
-.logo {
-    font-size: 2rem;
 }
 
 .header_navbar-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 1rem;
     margin: 0;
     align-items: center;
 }
@@ -38,7 +35,14 @@ header_navbar a {
 
 
 
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1025px){
 
-
+}
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px){
+    header_navbar {
+        display: none;
+    }
+}

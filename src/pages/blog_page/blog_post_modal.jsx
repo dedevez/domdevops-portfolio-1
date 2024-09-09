@@ -3,17 +3,13 @@ import React from 'react'
 const BlogPostModal = ({open, onClose, title, post_content}) => {
     if(!open) return null;
     return (
-        <div className="overlay">
-            <div className="modalContainer">
-
+        <div onClick={onClose} className="overlay">
+            <div onClick={(e) => {e.stopPropagation()}} className="modalContainer"> {/*stop propogation prevents child object from inheriting onClick action from parent container*/}
                 <div className="modalRight">
-                    <p onClick={onClose} className="closeBtn">X</p>
+                    <button onClick={onClose} className="closeBtn">x</button>
                     <div className="content">
                         <h1>{title}</h1>
                         <p>{post_content}</p>
-                    </div>
-                    <div className="btnContainer">
-                        <a className="btn btn-primary" onClick={onClose}>Continue Reading</a>
                     </div>
                 </div>
             </div>

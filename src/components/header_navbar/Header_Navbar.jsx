@@ -4,7 +4,6 @@ import './header_navbar.css'
 const Header_Navbar = () => {
     return (
         <header_navbar>
-
             <div class="header_navbar-left">
                 <ul className="permalinks">
                     <li><a href="home#" className="header_nav_logo">DomDevOps</a></li>
