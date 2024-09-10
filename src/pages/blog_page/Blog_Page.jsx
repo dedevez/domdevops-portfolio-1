@@ -62,6 +62,9 @@ const Blog_Page = () => {
 
     return (
         <section id='blog_page'>
+            <div className="home_link">
+                <a href="home#" className="header_nav_logo">DomDevOps</a>
+            </div>
             <div className="container blog_page_container">
                 {/* Render modal */}
                 {activeModalID !== null && (

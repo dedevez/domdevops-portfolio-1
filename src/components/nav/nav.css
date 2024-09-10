@@ -32,7 +32,6 @@ nav a:hover {
 nav a::after {
     content: attr(data-tooltip);
     position: absolute;
-    /*bottom: 120%;*/
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -53,14 +52,13 @@ nav a:hover::after {
 }
 
 
-
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1025px) {
 
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     nav {
         background: rgba(0, 0, 0, 0.3);
         width: max-content;
@@ -74,8 +72,28 @@ nav a:hover::after {
         bottom: auto;
         display: flex;
         flex-direction: row;
-        gap: 0.6rem;
+        gap: 1rem;
         border-radius: 3rem;
         backdrop-filter: blur(15px);
+    }
+
+    section::before {
+        content: "";
+        display: block;
+        height: 4rem;
+        margin-top: -4rem;
+    }
+
+
+    @media screen and (max-width: 380px) {
+        nav {
+            padding: 0.5rem 0.5rem;
+            gap: 0.5rem;
+        }
+
+        nav a {
+            padding: 0.7rem;
+            font-size: 1.1rem;
+        }
     }
 }

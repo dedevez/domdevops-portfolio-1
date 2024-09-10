@@ -36,8 +36,10 @@ header_navbar a:hover {
 
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
-@media screen and (max-width: 1025px){
-
+@media screen and (max-width: 1024px) {
+    header_navbar {
+        display: none;
+    }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */

@@ -32,7 +32,11 @@ const projects = [
 
 const Portfolio_Page = () => {
     return (
+
         <section id='portfolio_page'>
+            <div className="home_link">
+                    <a href="home#" className="header_nav_logo">DomDevOps</a>
+            </div>
             <div className="container portfolio_page_container">
                 <h2>Projects</h2>
 

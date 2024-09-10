@@ -75,11 +75,8 @@ header {
 }
 
 @media screen and (max-width: 415px){
-    header {
-        height: 60vh;
-    }
 
-    h5 {
+    .header_container h5 {
         font-size: 0.65rem;
     }
 

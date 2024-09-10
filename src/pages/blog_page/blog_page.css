@@ -1,3 +1,6 @@
+.home_link {
+    display: none;
+}
 .blog_header {
     padding: 0.5rem 1rem 4rem;
 }
@@ -121,7 +124,22 @@
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1024px) {
-    .blog_page_container {
+    .home_link{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    .home_link a {
+        color: var(--color-primary);
+    }
+    .home_link a:hover {
+        color: var(--color-white);
+    }
+    .blog_card_container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
     }
@@ -129,7 +147,7 @@
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
-    .blog_page_container {
+    .container.blog_card_container {
         grid-template-columns: 1fr;
         gap: 1rem;
     }

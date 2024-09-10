@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 35% 58%;
     gap: 12%;
+    word-wrap: break-word;
 }
 
 .contact_options {
@@ -62,6 +63,7 @@ input, textarea {
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1024px) {
     .container.contact_container {
+        width: var(--container-width-sm);
         grid-template-columns: 1fr;
         gap: 2rem;
     }
