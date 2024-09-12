@@ -49,6 +49,7 @@ jobs:
           username: ${{ secrets.NON_ROOT_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          cipher: aes256-cbc
           script: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
             docker stop portfolio-container || true
