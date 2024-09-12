@@ -1,19 +1,19 @@
-name: Deploy Website to HostGator with Docker
+name: Deploy Website to DigitalOcean with Docker
 
 on:
   push:
     branches:
       - main
 
-# This workflow will build and deploy a Docker container to HostGator
+# This workflow will build and deploy a Docker container to DigitalOcean
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -32,11 +32,20 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
 
-      - name: Deploy to HostGator
-        run: |
-          ssh mptlopte@domdevops.com << EOF
-          docker pull ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
-          docker stop portfolio-container || true
-          docker rm portfolio-container || true
-          docker run -d -p 80:8080 --name portfolio-container ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
-          EOF
+    deploy:
+      needs: build
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: Deploy to DigitalOcean Droplet via SSH
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: ${{ secrets.NON_ROOT_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
+            docker stop portfolio-container || true
+            docker rm portfolio-container || true
+            docker run -d --name portfolio-container -p 80:80 ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest

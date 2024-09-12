@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:14 AS build
+FROM node:14-alpine AS build
 
 # Set the working directory
 WORKDIR /app
@@ -19,7 +19,7 @@ RUN npm run build
 # Stage 2: Serve the app with Nginx
 FROM nginx:alpine
 
-# Copy the buil files from the React build stage
+# Copy the build files from the React build stage
 COPY --from=build /app/build /usr/share/nginx/html
 
 # Copy the Nginx configuration file
