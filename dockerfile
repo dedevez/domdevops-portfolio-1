@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the application
-RUN npm run build
+RUN npm run build --loglevel verbose
 
 # Stage 2: Serve the app with Nginx
 FROM nginx:alpine
