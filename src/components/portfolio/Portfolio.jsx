@@ -27,7 +27,7 @@ const Portfolio = () => {
     return (
         <section id='portfolio'>
             <h5>My Recent Work</h5>
-            <h2>Portfolio</h2>
+            <h2><a href={"/portfolio"} target="_blank">Portfolio</a></h2>
 
             <div className="container portfolio_container">
                 {
@@ -39,8 +39,8 @@ const Portfolio = () => {
                                 </div>
                                 <h3>{title}</h3>
                                 <div className="portfolio_item-cta">
-                                    <a href={website} className="btn" target="_blank">Github</a>  {/*fix this for portfolio*/}
-                                    {/*<a href={"/portfolio"} className="btn btn-primary" target="_blank">Details</a>*/}
+                                    <a href={website} className="btn" target="_blank">Visit Site</a>
+                                    <a href={"/portfolio"} className="btn btn-primary" target="_blank">Details</a>
                                 </div>
                             </article>
                         )

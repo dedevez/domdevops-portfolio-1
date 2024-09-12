@@ -7,22 +7,18 @@ import Portfolio from "../../components/portfolio/Portfolio";
 import Blog from "../../components/blog/Blog";
 import Specialties from "../../components/specialties/Specialties";
 import Contact from "../../components/contact/Contact";
-import Header_Navbar from "../../components/header_navbar/Header_Navbar";
-import Footer from "../../components/footer/Footer";
 
 const Home_Page = () => {
     return (
         <>
-            <Header_Navbar/>
             <Header/>
             <Nav/>
             <About/>
             <Experience/>
             <Portfolio/>
-            {/*<Blog/>*/}
+            <Blog/>
             <Specialties/>
             <Contact/>
-            <Footer/>
         </>
     )
 }
