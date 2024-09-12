@@ -6,9 +6,9 @@ import Header from "../header/Header";
 const Layout = ({children}) => {
     return (
         <>
-            <Header_Navbar/>
+            {/*<Header_Navbar/>*/}
             {children}
-            <Footer/>
+            {/*<Footer/>*/}
         </>
     )
 }

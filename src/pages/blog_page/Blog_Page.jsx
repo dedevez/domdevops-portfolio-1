@@ -20,7 +20,7 @@ const data = [
             'streamlining processes and enhancing collaboration through DevOps principles. Constant learning and growth ' +
             'drive my journey, and I’m eager to tackle new challenges, collaborate within the tech community, and ' +
             'contribute to impactful software solutions. Beyond coding, you’ll find me exploring new destinations, ' +
-            'immersed in a good book, or staying active with fitness challenges. hese experiences not only enrich my ' +
+            'immersed in a good book, or staying active with fitness challenges. These experiences not only enrich my ' +
             'life but also inspire creativity and persistence in my professional work. Join me on my journey at ' +
             'DomDevOps.com as I navigate the ever-evolving world of software development, share insights from my ' +
             'unique career path, and discuss how continuous learning shapes my daily life both personally and ' +
@@ -63,7 +63,7 @@ const Blog_Page = () => {
     return (
         <section id='blog_page'>
             <div className="home_link">
-                <a href="home#" className="header_nav_logo">DomDevOps</a>
+                <a href="https://domdevops.com" className="header_nav_logo">DomDevOps</a>
             </div>
             <div className="container blog_page_container">
                 {/* Render modal */}

@@ -6,7 +6,7 @@ const Header_Navbar = () => {
         <header_navbar>
             <div class="header_navbar-left">
                 <ul className="permalinks">
-                    <li><a href="home#" className="header_nav_logo">DomDevOps</a></li>
+                    <li><a href="https://domdevops.com" className="header_nav_logo">DomDevOps</a></li>
                 </ul>
             </div>
 
@@ -15,7 +15,7 @@ const Header_Navbar = () => {
                     <li><a href="home#about">About</a></li>
                     <li><a href="home#experience">Experience</a></li>
                     <li><a href="home#portfolio">Portfolio</a></li>
-                    <li><a href="home#blog">Blog</a></li>
+                    {/*<li><a href="home#blog">Blog</a></li>*/}
                     <li><a href="home#contact">Contact</a></li>
                 </ul>
             </div>
