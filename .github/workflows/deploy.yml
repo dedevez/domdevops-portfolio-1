@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy to HostGator
         run: |
-          ssh user@your-server-ip << EOF
+          ssh mptlopte@domdevops.com << EOF
           docker pull ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
           docker stop portfolio-container || true
           docker rm portfolio-container || true
