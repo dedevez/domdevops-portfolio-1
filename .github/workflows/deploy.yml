@@ -6,7 +6,7 @@ on:
       - main
 
 description: This workflow will build and deploy a Docker container to HostGator
-runs:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
