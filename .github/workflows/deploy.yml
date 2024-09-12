@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-description: This workflow will build and deploy a Docker container to HostGator
+# This workflow will build and deploy a Docker container to HostGator
 
 jobs:
   build-and-deploy:
