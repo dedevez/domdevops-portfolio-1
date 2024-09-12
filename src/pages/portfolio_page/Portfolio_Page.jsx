@@ -6,27 +6,30 @@ const projects = [
     {
         id: 1,
         title: 'My Portfolio Website',
-        summary: 'Project Summary',
-        case_study: 'www.github.com',
-        website: 'www.github.com',
-        github: 'www.github.com',
+        summary: 'My developer portfolio showcases my skills and projects using React for dynamic components, alongside ' +
+            'HTML and CSS for structure and styling. It features responsive design, smooth navigation, and a focus on ' +
+            'clean, modern UI to highlight my experience as a full-stack developer. This project demonstrates my ability ' +
+            'to build interactive, user-friendly web applications using core front-end technologies.',
+        case_study: '',
+        website: 'https://domdevops.com',
+        github: 'https://github.com/dedevez/domdevops-portfolio-1',
     },
-    {
-        id: 2,
-        title: 'Project Title',
-        summary: 'Project Summary',
-        case_study: 'www.github.com',
-        website: 'www.github.com',
-        github: 'www.github.com',
-    },
-    {
-        id: 3,
-        title: 'Project Title',
-        summary: 'Project Summary',
-        case_study: 'www.github.com',
-        website: 'www.github.com',
-        github: 'www.github.com',
-    },
+    // {
+    //     id: 2,
+    //     title: 'Project Title',
+    //     summary: 'Project Summary',
+    //     case_study: '',
+    //     website: 'https://github.com',
+    //     github: 'https://github.com',
+    // },
+    // {
+    //     id: 3,
+    //     title: 'Project Title',
+    //     summary: 'Project Summary',
+    //     case_study: '',
+    //     website: 'https://github.com',
+    //     github: 'https://github.com',
+    // },
 
 ]
 
@@ -47,9 +50,15 @@ const Portfolio_Page = () => {
                                 <h3>{title}</h3>
                                 <p>{summary}</p>
                                 <div className="project_item-cta">
-                                    <a href={case_study}>CASE STUDY</a>
-                                    <a href={website}>VISIT WEBSITE</a>
-                                    <a href={github}>GITHUB</a>
+                                    {case_study !== null && case_study !== '' ? (
+                                        <a href={case_study} target="_blank" >CASE STUDY</a>
+                                    ) : null}
+                                    {website !== null && website !== '' ? (
+                                        <a href={website} target="_blank" >VISIT WEBSITE</a>
+                                    ) : null}
+                                    {github !== null && github !== '' ? (
+                                        <a href={github} target="_blank" >GITHUB</a>
+                                    ) : null}
                                 </div>
                             </article>
                         ))}

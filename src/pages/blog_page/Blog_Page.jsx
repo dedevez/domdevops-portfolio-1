@@ -9,12 +9,13 @@ const data = [
     {
         id: 1,
         image: IMG1,
-        title: 'Who I Am: My Journey Into Software Development',
+        title: 'Hello World!',
         post_content: "Hello! I’m Dominique, a Full Stack Developer with a background in Economics, Finance, and " +
             'Business Management. After a decade in public sector financial administration, my curiosity for ' +
             'problem-solving led me to pursue a second Bachelor\'s degree in Computer Science, transitioning into the ' +
             'world of software engineering with a strong focus on DevOps. At DomDevOps, I showcase projects that reflect' +
             ' my diverse skill set and passion for innovation, blending technical expertise with strategic thinking. ' +
+            '                                                                                                      ' +
             'My portfolio highlights my proficiency in various programming languages, along with my commitment to ' +
             'streamlining processes and enhancing collaboration through DevOps principles. Constant learning and growth ' +
             'drive my journey, and I’m eager to tackle new challenges, collaborate within the tech community, and ' +
@@ -25,19 +26,18 @@ const data = [
             'unique career path, and discuss how continuous learning shapes my daily life both personally and ' +
             "professionally.",
     },
-    {
-        id: 2,
-        image: IMG2,
-        title: 'Personalizing DevOps: A Journey of Growth and Learning',
-        post_content: 'Coming Soon!',
-    },
-    {
-        id: 3,
-        image: IMG3,
-        title: 'Building My Portfolio: Tools, Tech, and Lessons Learned',
-        post_content: 'Coming Soon!',
-    },
-
+    // {
+    //     id: 2,
+    //     image: IMG2,
+    //     title: 'Personalizing DevOps: A Journey of Growth and Learning',
+    //     post_content: 'Coming Soon!',
+    // },
+    // {
+    //     id: 3,
+    //     image: IMG3,
+    //     title: 'Building My Portfolio: Tools, Tech, and Lessons Learned',
+    //     post_content: 'Coming Soon!',
+    // },
 ]
 
 const Blog_Page = () => {

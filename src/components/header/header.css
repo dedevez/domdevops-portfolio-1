@@ -1,5 +1,5 @@
 header {
-    height: 70vh;
+    height: 75vh;
     padding-top: 7rem;
     padding-bottom: 7rem;
     overflow: hidden;
@@ -16,6 +16,10 @@ header {
     font-weight: 400;
     font-size: 5.5rem;
     font-style: normal;
+}
+
+.header_container h5 {
+    font-size: 1rem;
 }
 
 /* ================ CTA ================ */

@@ -32,6 +32,11 @@
     background: var(--color-primary);
 }
 
+link {
+    position: fixed;
+    left: 3rem;
+}
+
 
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
