@@ -8,18 +8,21 @@ const data = [
         id: 1,
         image: IMG1,
         title: 'My Developer Portfolio',
-        website: 'https://github.com/dedevez/domdevops-portfolio-1',
+        github:'https://github.com/dedevez/domdevops-portfolio-1',
+        website: '',
     },
     // {
     //     id: 2,
     //     image: IMG2,
     //     title: 'AI Code Writer/Editor',
+    //     github:'https://github.com/dedevez/domdevops-portfolio-1',
     //     website: 'https://github.com',
     // },
     // {
     //     id: 3,
     //     image: IMG3,
     //     title: 'Learning Management System',
+    //     github:'https://github.com/dedevez/domdevops-portfolio-1',
     //     website: 'https://github.com',
     // }
 ]
@@ -31,7 +34,7 @@ const Portfolio = () => {
 
             <div className="container portfolio_container">
                 {
-                    data.map(({id, image, title, website}) => {
+                    data.map(({id, image, title, github, website}) => {
                         return (
                             <article key={id} className="portfolio_item">
                                 <div className="portfolio_item-image">
@@ -39,7 +42,14 @@ const Portfolio = () => {
                                 </div>
                                 <h3>{title}</h3>
                                 <div className="portfolio_item-cta">
-                                    <a href={website} className="btn" target="_blank">Visit Site</a>
+                                    {github !== null && github !== '' ? (
+                                        <a href={github} className="btn" target="_blank">See Github</a>
+                                    ) : null}
+
+                                    {website !== null && website!== '' ? (
+                                        <a href={website} className="btn" target="_blank">Visit Site</a>
+                                    ) : null}
+
                                     <a href={"/portfolio"} className="btn btn-primary" target="_blank">Details</a>
                                 </div>
                             </article>

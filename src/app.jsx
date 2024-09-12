@@ -26,12 +26,12 @@ const App = () => {
                     </Layout>
                 }/>
 
-                {/* Blog Page Route */}
-                <Route path="/blog" element={
-                    <Layout>
-                        <Blog_Page/>
-                    </Layout>
-                }/>
+                {/*/!* Blog Page Route *!/*/} {/*For future implementation*/}
+                {/*<Route path="/blog" element={*/}
+                {/*    <Layout>*/}
+                {/*        <Blog_Page/>*/}
+                {/*    </Layout>*/}
+                {/*}/>*/}
 
             </Routes>
         </Router>

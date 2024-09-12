@@ -1,13 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './about.css'
 import ME from '../../assets/profile-pic.jpg'
-import {Link} from "react-router-dom";
+import BioModal from "./bio_modal";
 
 const About = () => {
+
+
+    {/* ======== Set up modal for Bio read more ========= */}
+    const [modalActive, setModalActive] = useState(false)
+
+    // Open the modal
+    const openModal = () => {
+        setModalActive(true);
+    }
+
+    //Close the modal
+    const closeModal = () => {
+        setModalActive(false);
+    }
+
     return (
         <section id='about'>
             <h5>Get To Know</h5>
-            <h2><a href="" target="_blank">About Me</a></h2>
+            <h2>About Me</h2>
+
+            {/* Render modal */}
+            <BioModal open={modalActive} onClose={closeModal}/>
 
             <div className="container about_container">
                 <div className="about_me">
@@ -23,7 +41,7 @@ const About = () => {
                         learning. I’m excited to embrace new challenges, collaborate with the tech community, and
                         contribute to innovative software solutions.
                         <br/>
-                        <Link to="/blog">read more...</Link>
+                        <a onClick={openModal}>read more...</a>
                     </p>
 
                 </div>
