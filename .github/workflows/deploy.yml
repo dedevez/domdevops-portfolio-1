@@ -45,13 +45,30 @@ jobs:
       - name: Deploy to DigitalOcean Droplet via SSH
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.DROPLET_IP }}
-          username: ${{ secrets.NON_ROOT_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USER }}
+          key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          use_insecure_cipher: true
+          port: ${{ secrets.DO_SSH_PORT }}
           script: |
-            docker pull ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
+            set -eux  # Enable error and logging for debugging
+            docker pull ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest || exit 1
+            
+            # Stop and remove existing container
             docker stop portfolio-container || true
             docker rm portfolio-container || true
-            docker run -d --name portfolio-container -p 80:80 ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest
+            
+#            # Create a .env file
+#            # ??
+#            echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" > .env
+#            # ??
+#            echo "DEBUG=False" >> .env
+#            # ??
+#            echo "ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }}" >> .env
+
+
+            docker run -d --name portfolio-container\
+#            --env-file .env \
+            -p 8080:80 \
+            --restart unless-stopped ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest || exit 1
+            

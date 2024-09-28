@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:14-alpine AS build
+FROM node:18-alpine AS build
 
 # Set the working directory
 WORKDIR /app
@@ -8,10 +8,10 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci --only=production
 
 # Copy the source code
-COPY . .
+COPY . ./
 
 # Build the application
 RUN npm run build --loglevel verbose
@@ -28,5 +28,11 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Expose the ports for HTTP (80) and HTTPS (443)
 EXPOSE 80 443
 
+ENV NODE_ENV=production
+
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
+
+# Health Check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD curl -f http://localhost:80/ || exit 1
+

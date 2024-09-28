@@ -12,11 +12,11 @@ const Header_Navbar = () => {
 
             <div class="header_navbar-right">
                 <ul className="permalinks">
-                    <li><a href="home#about">About</a></li>
-                    <li><a href="home#experience">Experience</a></li>
-                    <li><a href="home#portfolio">Portfolio</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#experience">Experience</a></li>
+                    <li><a href="/#portfolio">Portfolio</a></li>
                     {/*<li><a href="home#blog">Blog</a></li>*/} {/*For future implementation*/}
-                    <li><a href="home#contact">Contact</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                 </ul>
             </div>
         </header_navbar>

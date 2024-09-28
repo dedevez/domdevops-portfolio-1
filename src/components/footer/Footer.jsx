@@ -9,18 +9,18 @@ const Footer = () => {
             <a href="#" className="footer_logo">DomDevOps<br/><PiInfinityBold/></a>
 
             <ul className="permalinks">
-                <li><a href="home#">Home</a></li>
-                <li><a href="home#about">About</a></li>
-                <li><a href="home#experience">Experience</a></li>
-                <li><a href="home#portfolio">Portfolio</a></li>
-                {/*<li><a href="home#blog">Blog</a></li>*/} {/*For future implementation*/}
-                <li><a href="home#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#experience">Experience</a></li>
+                <li><a href="/#portfolio">Portfolio</a></li>
+                {/*<li><a href="/#blog">Blog</a></li>*/} {/*For future implementation*/}
+                <li><a href="/#contact">Contact</a></li>
             </ul>
 
             <div className="footer_socials">
-                <a href="https://github.com"><FaGithub/></a>
-                <a href="https://linkedin.com"><FaLinkedin/></a>
-                <a href="https://instagram.com"><FaInstagramSquare/></a>
+                <a href="https://github.com/dedevez"><FaGithub/></a>
+                <a href="https://www.linkedin.com/in/dominique-d-998647258/"><FaLinkedin/></a>
+                <a href="https://www.instagram.com/domdevops/"><FaInstagramSquare/></a>
             </div>
 
             <div className="footer_copyright">
