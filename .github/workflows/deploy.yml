@@ -58,17 +58,8 @@ jobs:
             docker stop portfolio-container || true
             docker rm portfolio-container || true
             
-#            # Create a .env file
-#            # ??
-#            echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" > .env
-#            # ??
-#            echo "DEBUG=False" >> .env
-#            # ??
-#            echo "ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }}" >> .env
-
-
+            # Run the new container
             docker run -d --name portfolio-container\
-#            --env-file .env \
             -p 8080:80 \
             --restart unless-stopped ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest || exit 1
             
