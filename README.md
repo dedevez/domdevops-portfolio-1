@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# DomDevOps.com - Developer Portfolio
+Welcome to DomDevOps.com, my personal portfolio where I showcase my full-stack development and DevOps skills. This site highlights my projects, capabilities, and the tools and technologies I work with. It's designed to give potential employers and collaborators a comprehensive overview of my experience in the world of software engineering and DevOps.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This portfolio serves as a central hub for my professional work. Here, you can find:
 
-## Available Scripts
+About Me: Get to know more about my journey into software development and my career objectives.
 
-In the project directory, you can run:
+Skills: A detailed list of the developer tools and technologies I'm proficient in, ranging from front-end to back-end and DevOps practices.
 
-### `npm start`
+Projects: A collection of projects I've worked on, complete with links to both the live versions of the projects and the corresponding GitHub repositories.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Capabilities: An overview of what I specialize in, including full-stack development, DevOps processes, and CI/CD automation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contact Form: Feel free to get in touch with me directly through the contact form.
 
-### `npm test`
+## Features
+Responsive Design: Built to look great on any device, whether it's a desktop, tablet, or mobile.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CI/CD Pipeline: Integrated with GitHub Actions, the site is deployed using Docker containers and hosted on DigitalOcean. Continuous integration and deployment ensure that updates are automated and seamless.
 
-### `npm run build`
+Interactive Projects Section: Each project listed includes links to both the live site and the GitHub repository, providing visitors with a clear view of my work and code.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
+The portfolio was built using the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+HTML5: Structuring the content.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CSS3: For styling the layout and ensuring responsiveness.
 
-### `npm run eject`
+JavaScript: Adding interactivity.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React: The framework powering the dynamic user interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Docker: Used to containerize the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+DigitalOcean: For hosting and deployment of the site.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+GitHub Actions: CI/CD pipeline for automated build and deployment.
 
-## Learn More
+## Deployment
+The site is deployed using a continuous integration and continuous deployment (CI/CD) pipeline powered by GitHub Actions. Upon each push to the repository, the site is built within a Docker container and automatically deployed to DigitalOcean.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
+Interested in working together or have questions? You can reach me through:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Email: dominique@domdevops.com
 
-### Code Splitting
+LinkedIn: https://www.linkedin.com/in/dominique-d-998647258/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+GitHub: https://github.com/dedevez
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Instagram: https://www.instagram.com/domdevops
