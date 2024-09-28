@@ -1,6 +1,8 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/portfolio_proj_img.jpg'
+import IMG2 from '../../assets/mentori_portfolio_img.jpg'
+import IMG3 from '../../assets/WhimsyGossip_portfolio_img.JPG'
 
 
 const data = [
@@ -11,20 +13,20 @@ const data = [
         github:'https://github.com/dedevez/domdevops-portfolio-1',
         website: '',
     },
-    // {
-    //     id: 2,
-    //     image: IMG2,
-    //     title: 'AI Code Writer/Editor',
-    //     github:'https://github.com/dedevez/domdevops-portfolio-1',
-    //     website: 'https://github.com',
-    // },
-    // {
-    //     id: 3,
-    //     image: IMG3,
-    //     title: 'Learning Management System',
-    //     github:'https://github.com/dedevez/domdevops-portfolio-1',
-    //     website: 'https://github.com',
-    // }
+    {
+        id: 2,
+        image: IMG2,
+        title: 'MENTORI - AI Developer Assistant',
+        github:'',
+        website: 'https://mentori.tech',
+    },
+    {
+        id: 3,
+        image: IMG3,
+        title: 'Whimsy Gossip (Coming Soon!)',
+        github:'',
+        // website: 'https://whimsygossip.com',
+    }
 ]
 const Portfolio = () => {
     return (
@@ -37,10 +39,13 @@ const Portfolio = () => {
                     data.map(({id, image, title, github, website}) => {
                         return (
                             <article key={id} className="portfolio_item">
-                                <div className="portfolio_item-image">
-                                    <img src={image} alt={title}/>
+                                <div>
+                                    <div className="portfolio_item-image">
+                                        <img src={image} alt={title}/>
+                                    </div>
+                                    <h3>{title}</h3>
                                 </div>
-                                <h3>{title}</h3>
+
                                 <div className="portfolio_item-cta">
                                     {github !== null && github !== '' ? (
                                         <a href={github} className="btn" target="_blank">See Github</a>

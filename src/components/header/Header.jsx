@@ -2,7 +2,6 @@ import React from 'react'
 import './header.css'
 import CTA from './CallToAction'
 import HeaderSocials from "./HeaderSocials";
-import ME from '../../assets/me.png'
 const Header = () => {
     return (
         <header>

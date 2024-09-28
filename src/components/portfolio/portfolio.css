@@ -5,6 +5,11 @@
 }
 
 .portfolio_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
@@ -27,6 +32,9 @@
 }
 
 .portfolio_item-cta {
+    bottom: 1rem; 
+    left: 0;
+    right: 0;
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -37,7 +45,7 @@
 
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
 .portfolio_container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
@@ -46,7 +54,7 @@
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 835px) {
 .portfolio_container {
     grid-template-columns: 1fr;
     gap: 0.5rem;

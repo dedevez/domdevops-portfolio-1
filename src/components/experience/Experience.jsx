@@ -68,13 +68,13 @@ const Experience = () => {
                                 <small className="text-light">Proficient</small>
                             </div>
                         </article>
-                        <article className="experience_details">
-                            <BsPatchCheckFill className="experience_details-icon"/>
-                            <div>
-                                <h4>RESTful APIs</h4>
-                                <small className="text-light">Proficient</small>
-                            </div>
-                        </article>
+                        {/*<article className="experience_details">*/}
+                        {/*    <BsPatchCheckFill className="experience_details-icon"/>*/}
+                        {/*    <div>*/}
+                        {/*        <h4>RESTful APIs</h4>*/}
+                        {/*        <small className="text-light">Proficient</small>*/}
+                        {/*    </div>*/}
+                        {/*</article>*/}
                         <article className="experience_details">
                             <BsPatchCheckFill className="experience_details-icon"/>
                             <div>
@@ -102,13 +102,13 @@ const Experience = () => {
                                 <small className="text-light">Proficient</small>
                             </div>
                         </article>
-                        <article className="experience_details">
-                            <BsPatchCheckFill className="experience_details-icon"/>
-                            <div>
-                                <h4>Kubernetes</h4>
-                                <small className="text-light">Proficient</small>
-                            </div>
-                        </article>
+                        {/*<article className="experience_details">*/}
+                        {/*    <BsPatchCheckFill className="experience_details-icon"/>*/}
+                        {/*    <div>*/}
+                        {/*        <h4>Kubernetes</h4>*/}
+                        {/*        <small className="text-light">Proficient</small>*/}
+                        {/*    </div>*/}
+                        {/*</article>*/}
                         <article className="experience_details">
                             <BsPatchCheckFill className="experience_details-icon"/>
                             <div>
@@ -154,6 +154,13 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience_details-icon"/>
                             <div>
                                 <h4>GitHub Actions</h4>
+                                <small className="text-light">Intermediate</small>
+                            </div>
+                        </article>
+                        <article className="experience_details">
+                            <BsPatchCheckFill className="experience_details-icon"/>
+                            <div>
+                                <h4>Nginx</h4>
                                 <small className="text-light">Intermediate</small>
                             </div>
                         </article>
