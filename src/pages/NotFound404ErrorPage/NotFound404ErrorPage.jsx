@@ -1,5 +1,5 @@
 import React from 'react';
-import './404_error_page.css'
+import './NotFound404ErrorPage.css'
 
 const NotFound = () => {
     return (

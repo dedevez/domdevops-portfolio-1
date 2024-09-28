@@ -7,7 +7,7 @@ import Portfolio from "../../components/portfolio/Portfolio";
 import Specialties from "../../components/specialties/Specialties";
 import Contact from "../../components/contact/Contact";
 
-const Home_Page = () => {
+const HomePage = () => {
     return (
         <>
             <Header/>
@@ -22,4 +22,4 @@ const Home_Page = () => {
     )
 }
 
-export default Home_Page;
+export default HomePage;

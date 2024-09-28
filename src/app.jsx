@@ -1,9 +1,9 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Layout from "./components/layout/Layout";
-import Home_Page from "./pages/home_page/Home_Page";
-import Portfolio_Page from "./pages/portfolio_page/Portfolio_Page";
-import NotFound from "./pages/404_error_page/404_Error_Page";
+import HomePage from "./pages/home_page/HomePage";
+import PortfolioPage from "./pages/portfolio_page/PortfolioPage";
+import NotFound from "./pages/NotFound404ErrorPage/NotFound404ErrorPage";
 
 const App = () => {
     return (
@@ -13,7 +13,7 @@ const App = () => {
                 {/* Home/Root Route */}
                 <Route path="/" element={
                     <Layout>
-                        <Home_Page/>
+                        <HomePage/>
                     </Layout>
                 }/>
 
@@ -23,7 +23,7 @@ const App = () => {
                 {/* Portfolio Page Route */}
                 <Route path="/portfolio" element={
                     <Layout>
-                        <Portfolio_Page/>
+                        <PortfolioPage/>
                     </Layout>
                 }/>
 

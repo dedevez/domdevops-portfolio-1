@@ -45,7 +45,7 @@ const projects = [
 
 ]
 
-const Portfolio_Page = () => {
+const PortfolioPage = () => {
     return (
 
         <section id='portfolio_page'>
@@ -79,5 +79,5 @@ const Portfolio_Page = () => {
         </section>
     )
 }
-export default Portfolio_Page
+export default PortfolioPage
 

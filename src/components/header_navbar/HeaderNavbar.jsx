@@ -1,7 +1,7 @@
 import React from 'react'
 import './header_navbar.css'
 
-const Header_Navbar = () => {
+const HeaderNavbar = () => {
     return (
         <header_navbar>
             <div class="header_navbar-left">
@@ -22,4 +22,4 @@ const Header_Navbar = () => {
         </header_navbar>
     )
 }
-export default Header_Navbar
+export default HeaderNavbar
