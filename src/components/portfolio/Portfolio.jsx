@@ -32,7 +32,7 @@ const Portfolio = () => {
     return (
         <section id='portfolio'>
             <h5>My Recent Work</h5>
-            <h2><a href={"/portfolio"} target="_blank">Portfolio</a></h2>
+            <h2><a href={"/portfolio"} target="_blank" rel="noopener noreferrer">Portfolio</a></h2>
 
             <div className="container portfolio_container">
                 {

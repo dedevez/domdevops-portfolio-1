@@ -59,7 +59,7 @@ jobs:
             docker rm portfolio-container || true
             
             # Run the new container
-            docker run -d --name portfolio-container\
+            docker run -d --name portfolio-container \
             -p 8080:80 \
             --restart unless-stopped ${{ secrets.DOCKER_USERNAME }}/domdevops-portfolio-1:latest || exit 1
             
