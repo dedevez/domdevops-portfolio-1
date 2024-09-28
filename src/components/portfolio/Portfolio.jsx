@@ -48,14 +48,14 @@ const Portfolio = () => {
 
                                 <div className="portfolio_item-cta">
                                     {github !== null && github !== '' ? (
-                                        <a href={github} className="btn" target="_blank">See Github</a>
+                                        <a href={github} className="btn" target="_blank" rel="noopener noreferrer">See Github</a>
                                     ) : null}
 
                                     {website !== null && website!== '' ? (
-                                        <a href={website} className="btn" target="_blank">Visit Site</a>
+                                        <a href={website} className="btn" target="_blank" rel="noopener noreferrer">Visit Site</a>
                                     ) : null}
 
-                                    <a href={"/portfolio"} className="btn btn-primary" target="_blank">Details</a>
+                                    <a href={"/portfolio"} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Details</a>
                                 </div>
                             </article>
                         )

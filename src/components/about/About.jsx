@@ -30,7 +30,7 @@ const About = () => {
             <div className="container about_container">
                 <div className="about_me">
                     <div className="about_me-image">
-                        <img src={ME} alt="About Image" />
+                        <img src={ME} alt="About" />
                     </div>
                 </div>
                 <div className="about_content">
@@ -41,7 +41,9 @@ const About = () => {
                         learning. I’m excited to embrace new challenges, collaborate with the tech community, and
                         contribute to innovative software solutions.
                         <br/>
-                        <a onClick={openModal}>read more...</a>
+                        <button onClick={openModal} className="link-btn">
+                            read more...
+                        </button>
                     </p>
 
                 </div>

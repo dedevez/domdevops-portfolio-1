@@ -50,7 +50,7 @@ const PortfolioPage = () => {
 
         <section id='portfolio_page'>
             <div className="home_link">
-                    <a href="home#" className="header_nav_logo">DomDevOps</a>
+                    <a href="/#" className="header_nav_logo">DomDevOps</a>
             </div>
             <div className="container portfolio_page_container">
                 <h2>Projects</h2>
@@ -63,13 +63,13 @@ const PortfolioPage = () => {
                                 <p>{summary}</p>
                                 <div className="project_item-cta">
                                     {case_study !== null && case_study !== '' ? (
-                                        <a href={case_study} target="_blank" >CASE STUDY</a>
+                                        <a href={case_study} target="_blank" rel="noopener noreferrer">CASE STUDY</a>
                                     ) : null}
                                     {website !== null && website !== '' ? (
-                                        <a href={website} target="_blank" >VISIT WEBSITE</a>
+                                        <a href={website} target="_blank" rel="noopener noreferrer">VISIT WEBSITE</a>
                                     ) : null}
                                     {github !== null && github !== '' ? (
-                                        <a href={github} target="_blank" >GITHUB</a>
+                                        <a href={github} target="_blank" rel="noopener noreferrer">GITHUB</a>
                                     ) : null}
                                 </div>
                             </article>

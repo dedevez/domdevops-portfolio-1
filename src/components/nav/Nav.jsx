@@ -7,7 +7,7 @@ import { MdOutlineWorkHistory } from "react-icons/md";
 const Nav = () => {
     return (
     <nav>
-        <a href="#" data-tooltip="Home"><AiOutlineHome/></a>
+        <a href="/#" data-tooltip="Home"><AiOutlineHome/></a>
         <a href="#about" data-tooltip="About"><AiOutlineUser/></a>
         <a href="#experience" data-tooltip="Experience"><MdOutlineWorkHistory/></a>
         <a href="#portfolio" data-tooltip="Portfolio"><AiTwotoneFolderOpen/></a>

@@ -92,6 +92,16 @@ a:hover {
     color: var(--color-white);
 }
 
+.link-btn {
+    color: var(--color-primary);
+    transition: var(--transition);
+    background: transparent;
+}
+
+.link-btn:hover {
+    color: var(--color-white);
+}
+
 .btn {
     width: max-content;
     display: inline-block;
