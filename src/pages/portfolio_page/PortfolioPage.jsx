@@ -43,7 +43,7 @@ const projects = [
             '\'coming soon\' page, highlighting the efficiency of the automated deployment process while setting the ' +
             'stage for future content and features.',
         case_study: '',
-        website: 'https://whimsygossip.com',
+        website: '',
         testuser: '',
         testuserpassword: '',
         github: '',

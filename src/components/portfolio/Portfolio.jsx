@@ -25,7 +25,7 @@ const data = [
         image: IMG3,
         title: 'Whimsy Gossip (Coming Soon!)',
         github:'',
-        website: 'https://whimsygossip.com',
+        website: '',
     }
 ]
 const Portfolio = () => {
