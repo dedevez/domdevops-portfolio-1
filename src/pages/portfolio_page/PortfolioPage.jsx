@@ -12,6 +12,8 @@ const projects = [
             'to build interactive, user-friendly web applications using core front-end technologies.',
         case_study: '',
         website: 'https://domdevops.com',
+        testuser: '',
+        testuserpassword: '',
         github: 'https://github.com/dedevez/domdevops-portfolio-1',
     },
     {
@@ -26,6 +28,8 @@ const projects = [
             'blending AI with a robust backend to create a valuable resource for developers.',
         case_study: '',
         website: 'https://mentori.tech',
+        testuser: 'guest',
+        testuserpassword: 'guestpassword',
         github: '',
     },
     {
@@ -40,6 +44,8 @@ const projects = [
             'stage for future content and features.',
         case_study: '',
         website: 'https://whimsygossip.com',
+        testuser: '',
+        testuserpassword: '',
         github: '',
     },
 
@@ -57,10 +63,13 @@ const PortfolioPage = () => {
 
                 <div className="container project_card_container">
                     {
-                        projects.map(({id, title, summary, case_study, website, github}) => (
+                        projects.map(({id, title, summary, case_study, website, testuser, testuserpassword, github}) => (
                             <article key={id} className="project_item">
                                 <h3>{title}</h3>
                                 <p>{summary}</p>
+                                {testuser !== null && testuser !== '' ? (
+                                    <small>Guest User: {testuser} <br/> Guest Password: {testuserpassword}</small>
+                                ) : null}
                                 <div className="project_item-cta">
                                     {case_study !== null && case_study !== '' ? (
                                         <a href={case_study} target="_blank" rel="noopener noreferrer">CASE STUDY</a>
